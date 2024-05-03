@@ -878,6 +878,7 @@ function postingBatch() {
 /**
  * GENERAL
  * Extra scripts
+ * Frankly this is not needed -  Armaan
  */
 function postingExtra() {
 
@@ -1582,9 +1583,12 @@ function postingList() {
     injectCSS(baseURL + 'css/postings.css', 'head');
     // injectCSS(baseURL + 'theme/theme_' + options.GLB_ThemeID + '/postings.css', 'head');
 
+    console.log('current url: ' + currURL);
     // coop
-    if (currURL.match(/\/myAccount\/co-op\/coop-postings\.htm/gi))
+    if (currURL.match(/\/myAccount\/co-op\/coop-postings\.htm/gi)){
+        console.log('coop page detected: ' + currURL);
         $('body').addClass('postings-coop');
+    }
 
     // grad / full-time
     else if (currURL.match(/\/myAccount\/hire-waterloo\/full-time-jobs\/jobs-postings\.htm/gi))
@@ -1904,7 +1908,7 @@ if (typeof jQuery !== typeof undefined) {
         postingList();
         applicationList();
         postingDetail();
-        postingExtra();
+        //postingExtra();
         removeOverlay();
     } else {
         var injectIntCnt = 0;
@@ -1914,7 +1918,7 @@ if (typeof jQuery !== typeof undefined) {
                 postingList();
                 applicationList();
                 postingDetail();
-                postingExtra();
+                //postingExtra();
                 removeOverlay();
             } else if (injectIntCnt > 50) {
                 clearInterval(injectInt);
@@ -1923,7 +1927,9 @@ if (typeof jQuery !== typeof undefined) {
             injectIntCnt++;
         }, 200);
     }
-} else {
+} 
+
+else {
     document.querySelectorAll('.azure-load-cover').forEach(function (el) {
         el.remove();
     });

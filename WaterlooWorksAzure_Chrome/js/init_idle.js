@@ -2,7 +2,7 @@ function extensionUpdate() {
 
     var oldVer = options.EXT_Version, newVer;
 
-    console.log('WaterlooWorks Azure (V' + oldVer + ')');
+    console.log('WaterlooWorks Azure URLs Updated (V' + oldVer + ')');
 
     chrome.runtime.sendMessage({action: 'getDetails'}, function (response) {
 
@@ -944,11 +944,8 @@ function startAzure() {
 
     // remove cover
     var hash = decodeURI(window.location.hash);
-    if (currURL.match(/\/coop-postings\.htm/) || currURL.match(/\/jobs-postings\.htm/)) {
-
-    } else {
-        removeOverlay();
-    }
+    console.log("init_idle.js line 947: " + currURL);
+    removeOverlay();
 
 }
 
@@ -1009,7 +1006,7 @@ function initAzureIdle() {
     if (currURL.match(/\/myAccount\/dashboard\.htm/i)) {
         injectJS(baseURL + 'js/messages.js', 'body');
     }
-    if (currURL.match(/\/jobs-postings\.htm/) || currURL.match(/\/coop-postings\.htm/)
+    if (currURL.match(/\/co-op\/direct\/jobs\.htm/) || currURL.match(/\/co-op\/full\/jobs\.htm/)
         || currURL.match(/\/applications\.htm/) || currURL.match(/\/coopApplications\.htm/)) {
         injectJS(baseURL + 'js/postings.js', 'body');
         if (options.JOB_ShortlistExport || options.JOB_ApplicationExport)

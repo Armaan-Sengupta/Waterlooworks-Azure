@@ -59,7 +59,7 @@ function startTheme() {
     });
 
     // hide side bar
-    if (currURL.match(/\/coop-postings\.htm/) || currURL.match(/\/jobs-postings\.htm/)) {
+    if (currURL.match(/\/co-op\/full\/jobs\.htm/) || currURL.match(/\/co-op\/direct\/jobs\.htm/)) {
         if ($('#postingsTablePlaceholder').length) {
 
             var hideBtn;
