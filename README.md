@@ -4,8 +4,8 @@
 ## Install
 Download the code as a zip (green code button), unzip it (extract it), then load the unpacked extension to your browser. To do this go to the url below, enable devloper mode, then click "load unpacked" and select the chrome folder (sry firefox users):
 
-Chrome: chrome://extensions/
-Edge: edge://extensions/
+Chrome: chrome://extensions/ \
+Edge: edge://extensions/ \
 
 ## Features
 - Multiple themes
