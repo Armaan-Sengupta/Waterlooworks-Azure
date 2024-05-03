@@ -4,9 +4,9 @@
 ## Install
 Download the code as a zip (green code button), unzip it (extract it), then load the unpacked extension to your browser. To do this go to the url below, enable devloper mode, then click "load unpacked" and select the chrome folder (sry firefox users):
 
-Chrome: chrome://extensions/ \
-Edge: edge://extensions/ \\
-
+Chrome: chrome://extensions/  
+Edge: edge://extensions/  
+  
 More step by step instructions: https://www.cnet.com/tech/services-and-software/how-to-install-chrome-extensions-manually/
 
 ## Features
