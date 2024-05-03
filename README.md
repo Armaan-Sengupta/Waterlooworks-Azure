@@ -1,11 +1,13 @@
 # Waterlooworks Azure
-**To be clear the only change I made was fix some basic URLs so they now match with the new waterloo works URLs.** WaterlooWorks Azure is a browser extension designed to enhance the user experience with WaterlooWorks. 
+**To be clear the only change I made was fix some basic URLs so they now match with the new waterloo works URLs.** 
 
 ## Install
 Download the code as a zip (green code button), unzip it (extract it), then load the unpacked extension to your browser. To do this go to the url below, enable devloper mode, then click "load unpacked" and select the chrome folder (sry firefox users):
 
 Chrome: chrome://extensions/ \
-Edge: edge://extensions/
+Edge: edge://extensions/ \\
+
+More step by step instructions: https://www.cnet.com/tech/services-and-software/how-to-install-chrome-extensions-manually/
 
 ## Features
 - Multiple themes
