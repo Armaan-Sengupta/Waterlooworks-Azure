@@ -1585,7 +1585,7 @@ function postingList() {
 
     console.log('current url: ' + currURL);
     // coop
-    if (currURL.match(/\/myAccount\/co-op\/coop-postings\.htm/gi)){
+    if (currURL.match(/\/myAccount\/co-op\/full\/jobs\.htm/gi)){
         console.log('coop page detected: ' + currURL);
         $('body').addClass('postings-coop');
     }
@@ -1653,8 +1653,8 @@ function postingList() {
     // Shortlist / sort column / flip pages all reload table
     $(document).ajaxComplete(function (event, xhr, settings) {
 
-        if ((settings.url === '/myAccount/co-op/coop-postings.htm'
-            || settings.url === '/myAccount/hire-waterloo/other-jobs/jobs-postings.htm'
+        if ((settings.url === '/myAccount/co-op/full/jobs.htm'
+            || settings.url === '/myAccount/co-op/direct/jobs.htm'
             || settings.url === '/myAccount/hire-waterloo/full-time-jobs/jobs-postings.htm')
             && settings.dataType === 'html') {
             postingListAjax($('#postingsTable'), $('#postingsTablePlaceholder'));
