@@ -147,7 +147,7 @@ function initAzure() {
         // redirect to home
         if (options.GLB_AutoRedirectToLogin
             && (currURL.match(/\/notLoggedIn\.htm/i) || currURL.match(/\/logout\.htm/i))) {
-            location.href = location.protocol + "//" + location.host + "/myAccount/dashboard.htm";
+            location.href = location.protocol + "//" + location.host + "/home.htm";
             return;
         }
 
